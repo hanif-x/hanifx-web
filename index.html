@@ -1,0 +1,180 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hanifx – Python Hashing Module</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #f7faff, #edf3ff);
+      color: #2d2d2d;
+      overflow-x: hidden;
+    }
+    header {
+      background: linear-gradient(to right, #003973, #e5e5be);
+      color: white;
+      padding: 4rem 1rem;
+      text-align: center;
+      animation: fadeIn 1s ease-out forwards;
+    }
+    header h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+    }
+    header p {
+      font-size: 1.25rem;
+      margin-top: 0.5rem;
+    }
+    nav {
+      background: white;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      animation: slideDown 0.6s ease-out;
+    }
+    nav a {
+      color: #003973;
+      margin: 0 1.5rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #7e57c2;
+    }
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: auto;
+      animation: fadeUp 1s ease-out;
+    }
+    section h2 {
+      font-size: 2.25rem;
+      margin-bottom: 1rem;
+      color: #1a1a1a;
+      text-align: center;
+    }
+    .highlight {
+      background: #e8f0ff;
+      border-left: 5px solid #007bff;
+      padding: 1rem;
+      margin: 0.75rem 0;
+      border-radius: 5px;
+      font-weight: 500;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+      animation: fadeUp 0.5s ease-out;
+    }
+    .code-container {
+      background: #0e1117;
+      color: #c9d1d9;
+      padding: 1.5rem;
+      border-radius: 12px;
+      font-family: 'Courier New', monospace;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+      overflow-x: auto;
+      margin-top: 1rem;
+    }
+    .code-line {
+      opacity: 0;
+      transform: translateX(-20px);
+      animation: fadeInLeft 0.5s ease forwards;
+      white-space: pre;
+    }
+    .code-line:nth-child(1) { animation-delay: 0.1s; }
+    .code-line:nth-child(2) { animation-delay: 0.2s; }
+    .code-line:nth-child(3) { animation-delay: 0.3s; }
+    .code-line:nth-child(4) { animation-delay: 0.4s; }
+    .code-line:nth-child(5) { animation-delay: 0.5s; }
+    .code-line:nth-child(6) { animation-delay: 0.6s; }
+    .code-line:nth-child(7) { animation-delay: 0.7s; }
+    .code-line:nth-child(8) { animation-delay: 0.8s; }@keyframes fadeInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes slideDown {
+  from { transform: translateY(-100%); }
+  to { transform: translateY(0); }
+}
+footer {
+  background: #0e1117;
+  color: #ccc;
+  text-align: center;
+  padding: 3rem 1rem;
+  margin-top: 4rem;
+}
+a {
+  color: #4ea1f3;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>hanifx</h1>
+    <p>Advanced Python Module for Hashing & Threat Detection</p>
+  </header>  <nav>
+    <a href="#features">Features</a>
+    <a href="#install">Install</a>
+    <a href="#examples">Examples</a>
+    <a href="#contact">Contact</a>
+  </nav>  <section id="features">
+    <h2>Features</h2>
+    <div class="highlight">🔐 Custom & Fast Hashing Functions</div>
+    <div class="highlight">🛡️ Detect Harmful Scripts (AI-powered)</div>
+    <div class="highlight">📁 Secure File Content Hashing</div>
+    <div class="highlight">👨‍🏫 Tools for Teachers & White Hat Hackers</div>
+    <div class="highlight">🧪 Lightweight, Modular & Simple API</div>
+  </section>  <section id="install">
+    <h2>Installation</h2>
+    <p>Install hanifx using pip:</p>
+    <div class="code-container">
+      <div class="code-line">pip install hanifx</div>
+    </div>
+  </section>  <section id="examples">
+    <h2>Example: Haram Code Full Detection</h2>
+    <div class="code-container">
+      <div class="code-line">from hanifx import detect_threats</div>
+      <div class="code-line"></div>
+      <div class="code-line">code = """</div>
+      <div class="code-line">def hack():</div>
+      <div class="code-line">    import os</div>
+      <div class="code-line">    os.system('rm -rf /')</div>
+      <div class="code-line">"""</div>
+      <div class="code-line"></div>
+      <div class="code-line">result = detect_threats(code)</div>
+      <div class="code-line">print("Threats Detected:", result)</div>
+    </div>
+  </section>  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:sajim4653@gmail.com">sajim4653@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/hanif-x" target="_blank">github.com/hanif-x</a></p>
+  </section>  <footer>
+    <p>&copy; 2025 hanifx. All rights reserved.</p>
+  </footer>
+</body>
+</html>
